@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "The Sisig Spot By Kian.",
+    "slug": "the-sisig-spot-by-kian",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logoni.png",
+    "scheme": "sisigan",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/logoni.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.kianvictorillo26.thesisigspotbykian"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#f7b638",
+          "dark": {
+            "backgroundColor": "#f7b638"
+          }
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app needs access to your photos to add menu items",
+          "cameraPermission": "The app needs access to your camera to take photos"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "2f26dd19-599c-4102-bec3-2639ada5fb40"
+      }
+    }
+  }
+}
